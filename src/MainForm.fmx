@@ -1,0 +1,73 @@
+object NavMainForm: TNavMainForm
+  Left = 0
+  Top = 0
+  Caption = 'VBWeb'
+  ClientHeight = 480
+  ClientWidth = 640
+  Fill.Color = claBlack
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  DesignerMasterStyle = 0
+  object Button1: TButton
+    Align = Top
+    Size.Width = 640.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'Gros Bouton'
+    TextSettings.Trimming = None
+    Visible = False
+    OnClick = Button1Click
+  end
+  object Label1: TLabel
+    Align = Top
+    Position.Y = 49.000000000000000000
+    Size.Width = 640.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Label1'
+    Visible = False
+    TabOrder = 2
+  end
+  object Label2: TLabel
+    Align = Top
+    Position.Y = 66.000000000000000000
+    Size.Width = 640.000000000000000000
+    Size.Height = 39.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Label1'
+    Visible = False
+    TabOrder = 1
+  end
+  object CheckBox1: TCheckBox
+    Align = Top
+    Position.Y = 105.000000000000000000
+    Size.Width = 640.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Text = 'Fichier ini trouv'#233
+    Visible = False
+  end
+  object CheckBox2: TCheckBox
+    Align = Top
+    Position.Y = 124.000000000000000000
+    Size.Width = 640.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = 'Fichier ini trouv'#233
+    Visible = False
+  end
+  object Nav: TWebBrowser
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    WindowsEngine = IEOnly
+  end
+end

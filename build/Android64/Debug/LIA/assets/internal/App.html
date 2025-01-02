@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge" />-->
+    <title>Document</title>
+    <script>
+        function openClick(){
+            window.location.href = "delphi:OpenFile()";
+        }
+        
+        function saveClick(){
+            var str = document.getElementById("txtx").value;
+            //alert("delphi:SaveFile('" + str + "')");
+            window.location.href = "delphi:SaveFile('" + str + "')";
+        }
+        function SetData(contenu) { 
+            document.getElementById("txtx").value = contenu
+        }
+        function aboutClick(){
+            alert("Delphi hybrid application example written by Andrei Aleksandrov");
+        }
+    </script>
+</head>
+<body>
+    <h1>Ma page New </h1>    
+    <div class="row">
+        <div class="col-1 sidebar">
+            <nav class="nav flex-column">
+                <a class="nav-link" href="#" onclick="openClick()">Open</a>
+                <a class="nav-link" href="#" onclick="saveClick()">Save</a>
+                <a class="nav-link" href="#" onclick="aboutClick()">About</a>
+            </nav>
+        </div>
+        <div class="col-11">
+            <textarea id="txtx"></textarea>
+        </div>
+    </div>
+</body>
+</html>
