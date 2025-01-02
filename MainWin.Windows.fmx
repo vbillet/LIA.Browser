@@ -1,0 +1,6 @@
+inherited Form1_Windows: TForm1_Windows
+  DesignerMasterStyle = 3
+  inherited Rectangle1: TRectangle
+    Size.Width = 817.000000000000000000
+  end
+end
